@@ -37,7 +37,7 @@ public class XcyUser implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date createTime;
 
-    private String testName;
+    private String realName;
 
     public String getId() {
         return id;
@@ -71,11 +71,11 @@ public class XcyUser implements Serializable {
         this.createTime = createTime;
     }
 
-    public String getTestName() {
-        return testName;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setTestName(String testName) {
-        this.testName = testName;
+    public void setRealName(String realName) {
+        this.realName = realName;
     }
 }
