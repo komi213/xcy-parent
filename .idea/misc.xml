@@ -10,6 +10,20 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/product/pom.xml" />
         <option value="$PROJECT_DIR$/myjpadao/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/data-collect/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/service-auth/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/project-manage/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/TradingCenter/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/Bidding/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/stock-product/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/system/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/apigateway/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/electron-sign/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/config-server/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/news-server/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/eureka-server/pom.xml" />
+        <option value="D:/MySvnProgram/xcy/backend/upload/pom.xml" />
+        <option value="D:/MyJavaProgram/supplychain20100307/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -18,7 +32,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -6,22 +6,68 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="upload" />
+        <module name="config-server" />
+        <module name="project-manage" />
+        <module name="apigateway" />
         <module name="model" />
-        <module name="myjpadao" />
-        <module name="order" />
         <module name="product" />
+        <module name="data-collect" />
         <module name="user" />
+        <module name="order" />
+        <module name="service-auth" />
+        <module name="news-server" />
+        <module name="stock-product" />
+        <module name="xytapi" />
+        <module name="myjpadao" />
+        <module name="Bidding" />
+        <module name="system" />
+        <module name="TradingCenter" />
+        <module name="electron-sign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="apigateway" target="1.8" />
+      <module name="Bidding" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="dao" target="1.8" />
+      <module name="data-collect" target="1.8" />
+      <module name="electron-sign" target="1.8" />
+      <module name="eureka-server" target="1.8" />
       <module name="model" target="1.8" />
       <module name="myjpadao" target="1.8" />
+      <module name="news-server" target="1.8" />
       <module name="order" target="1.8" />
       <module name="product" target="1.8" />
+      <module name="project-manage" target="1.8" />
       <module name="proudct" target="1.8" />
+      <module name="service-auth" target="1.8" />
+      <module name="stock-product" target="1.8" />
+      <module name="system" target="1.8" />
+      <module name="TradingCenter" target="1.8" />
+      <module name="upload" target="1.8" />
       <module name="user" target="1.8" />
       <module name="xcy-parent" target="1.8" />
+      <module name="xytapi" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Bidding" options="-parameters" />
+      <module name="TradingCenter" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
+      <module name="data-collect" options="-parameters" />
+      <module name="electron-sign" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="myjpadao" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="project-manage" options="-parameters" />
+      <module name="service-auth" options="-parameters" />
+      <module name="stock-product" options="-parameters" />
+      <module name="upload" options="-parameters" />
+      <module name="user" options="-parameters" />
+    </option>
   </component>
 </project>
