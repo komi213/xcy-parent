@@ -1,10 +1,15 @@
 package com.xcy.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenerationTime;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
+import java.util.Date;
 
 //用户
 @Entity
@@ -25,6 +30,14 @@ public class XcyUser implements Serializable {
     @NotBlank(message = "年龄不能为空")
     @Column(length = 100)
     private String age;
+
+    @Column(columnDefinition = "datetime default now()")
+    @Generated(GenerationTime.INSERT)
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private Date createTime;
+
+    private String testName;
 
     public String getId() {
         return id;
@@ -48,5 +61,21 @@ public class XcyUser implements Serializable {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getTestName() {
+        return testName;
+    }
+
+    public void setTestName(String testName) {
+        this.testName = testName;
     }
 }
