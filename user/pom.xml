@@ -10,6 +10,7 @@
     <artifactId>user</artifactId>
     <name>user</name>
     <description>Demo project for Spring Boot</description>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -48,10 +49,11 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.3</version>
+                <version>1.0.0</version>
                 <configuration>
-                    <imageName>microservice-user-service</imageName>
+                    <imageName>microservice-myuser-service</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
+                    <dockerHost>http://192.168.139.128:2375</dockerHost>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
